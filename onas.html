@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O nas — jak powstaje tapeta Wallfam | Historia studia i procesu tworzenia</title>
+<meta name="description" content="Każda tapeta Wallfam zaczyna się od obrazu namalowanego ręcznie przez artystę. Poznaj historię studia i dowiedz się, jak przenosimy sztukę na Twoją ścianę.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wallfam.eu/onas.html">
+
+<meta property="og:type"         content="article">
+<meta property="og:locale"       content="pl_PL">
+<meta property="og:site_name"    content="Wallfam">
+<meta property="og:title" content="O nas — historia i proces tworzenia | Wallfam">
+<meta property="og:description" content="Każda tapeta Wallfam zaczyna się od obrazu namalowanego ręcznie przez artystę. Poznaj naszą historię i unikalny proces tworzenia.">
+<meta property="og:url"          content="https://wallfam.eu/onas.html">
+<meta property="og:image"        content="https://wallfam.eu/img/og/onas.jpg"><!-- ← ZMIEŃ ŚCIEŻKĘ -->
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Artystyczne tapety Wallfam – ręcznie malowane wzory do wnętrz premium">
+
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="O nas — historia i proces tworzenia | Wallfam">
+<meta name="twitter:description" content="Każda tapeta Wallfam zaczyna się od obrazu namalowanego ręcznie przez artystę. Poznaj nasz proces tworzenia.">
+<meta name="twitter:image"       content="https://wallfam.eu/img/og/onas.jpg">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      
+      {
+        "@type": "Organization",
+        "@id": "https://wallfam.eu/#organization",
+        "name": "Wallfam",
+        "url": "https://wallfam.eu",
+        "logo": "https://wallfam.eu/img/logo.png",
+        "image": "https://wallfam.eu/img/og/index.jpg",
+        "email": "wallfam@wallfam.eu",
+        "description": "Artystyczne tapety na wymiar i ręcznie malowane obrazy inspirowane naturą i sztuką.",
+        "sameAs": [
+          "https://www.instagram.com/wallfam_art"
+        ],
+        "knowsAbout": [
+          "tapety artystyczne",
+          "tapety na wymiar",
+          "ręcznie malowane obrazy",
+          "dekoracja wnętrz",
+          "design wnętrz"
+        ]
+      },
+  
+      {
+        "@type": "WebSite",
+        "@id": "https://wallfam.eu/#website",
+        "url": "https://wallfam.eu",
+        "name": "Wallfam",
+        "inLanguage": "pl-PL",
+        "description": "Artystyczne tapety i ręcznie malowane obrazy Wallfam",
+        "publisher": {
+          "@id": "https://wallfam.eu/#organization"
+        }
+      },
+  
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://wallfam.eu/#business",
+        "name": "Wallfam",
+        "url": "https://wallfam.eu",
+        "email": "wallfam@wallfam.eu",
+        "areaServed": "PL",
+        "image": "https://wallfam.eu/img/og/index.jpg",
+        "description": "Studio tworzące artystyczne tapety na wymiar oraz ręcznie malowane obrazy.",
+        "sameAs": [
+          "https://www.instagram.com/wallfam_art"
+        ],
+               "mainEntityOfPage": "https://wallfam.eu/onas.html"
+      },
+
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://wallfam.eu/" },
+          { "@type": "ListItem", "position": 2, "name": "O nas", "item": "https://wallfam.eu/onas.html" }
+        ]
+      }
+  
+    ]
+  }
+  </script>
+
+<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#414141;
+  --text:#f2f2f2;
+  --accent:#282828;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Spectral SC", serif;
+  line-height:1.6;
+  padding-top:0px;
+}
+/* ===== HEADER ===== */
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #414141;
+  border-bottom: 1px solid #444;
+  z-index: 1000;
+}
+
+.nav{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 28px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.nav-left,
+.nav-right{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-left{ justify-content: flex-start; }
+.nav-right{ justify-content: flex-end; }
+
+.nav a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0.85;
+  position: relative;
+  transition: 0.2s ease;
+  will-change: opacity;
+}
+
+.nav a:hover{
+  opacity: 1;
+}
+
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0%;
+  height:1px;
+  background:#fff;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after{
+  width:100%;
+}
+
+.logo{
+  display: grid;
+  place-items: center;
+  transform: translateZ(0); /* stabilizuje GPU rendering */
+}
+
+.logo img{
+  height: 180px;
+  width: auto;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+}
+.logo a{
+  text-decoration: none;
+  opacity: 1;
+}
+
+.logo a::after{
+  display: none;
+}
+
+
+/* ===== COLLECTIONS PAGE ===== */
+
+.collections-page{
+  padding-bottom:400px;
+  margin-top: 100px;
+}
+
+/* intro text */
+.collections-intro{
+  width:50%;
+  margin:0 auto 120px;
+}
+
+.collections-intro h1{
+  font-family:"Spectral SC", serif;
+  font-size:22px;
+  margin-bottom:24px;
+}
+
+.collections-intro p{
+  font-size:17px;
+  max-width:520px;
+}
+
+/* gallery */
+.collections-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 60px 40px;                 
+  width: fit-content;             
+}
+.gallery-item{
+  display:block;
+  overflow:hidden;
+  background:#282828;
+}
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+  aspect-ratio:3 / 2;
+  object-fit:cover;
+  transition:transform 0.4s ease;
+}
+
+.gallery-item:hover img{
+  transform:scale(1.25);
+}
+
+.collections-gallery-section {
+  width: 100%;             
+  margin: 0 auto 100px;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+}
+
+/* Section headers */
+.collections-gallery-header {
+  width: 50%;              
+  text-align: left;        
+  margin-bottom: 40px;
+}
+
+.collections-gallery-header h2 {
+  font-family: "Spectral SC", serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.collections-gallery-header p {
+  font-family: Inter, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  opacity: 0.9;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+
+.gallery-item img {
+  width: 100%;
+  height: auto;       
+  max-width: 800px;   
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+.collections-gallery a.gallery-item:nth-child(1) img {
+  object-fit: contain;
+  transform: scale(1.05)
+}
+
+/* Right image: fill/cover */
+.collections-gallery a.gallery-item:nth-child(2) img {
+  object-fit: fill; 
+  transform: scale(1.1)
+}
+
+
+/* ===== POPUP OVERLAY ===== */
+.popup-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 0.3s ease;
+  z-index:2000;
+}
+
+
+.popup{
+  position:absolute;
+  left:0;
+  top:0;
+  width:50%;
+  height:100%;
+  background:#282828;
+  padding:60px;
+  transform:translateX(-100%);
+  transition:transform 0.4s ease;
+  overflow-y:auto;
+}
+
+.popup-overlay:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.popup-overlay:target .popup{
+  transform:translateX(0);
+}
+
+
+.popup-close{
+  position:absolute;
+  top:30px;
+  right:30px;
+  text-decoration:none;
+  color:#f2f2f2;
+  font-size:28px;
+}
+
+.popup h2{
+  font-family:"Spectral SC", serif;
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.popup ul{
+  margin-bottom:40px;
+  padding-left:20px;
+}
+
+.popup ul li{
+  margin-bottom:10px;
+  font-size:15px;
+}
+
+
+.popup-image{
+  width:80%;
+  max-width:1000px;
+  aspect-ratio:3 / 2;
+  background:#414141;
+  overflow:hidden;
+
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.popup-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+footer{
+  border-top:1px solid var(--bg-dark);
+  padding:40px 28px;margin-top:80px;
+  font-family:"Spectral SC", serif;
+}
+.footer-inner{
+  max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;font-size:14px;
+}
+footer h4{font-family:"Spectral SC", serif;margin-bottom:12px;}
+
+/* ===== Split section ===== */
+.split-section{
+  padding: 160px 28px;
+}
+
+
+/* mobile */
+@media (max-width: 768px){
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 12px;
+  column-gap: 8px;
+}
+
+
+.logo img{
+  height: 70px;
+}
+
+
+.nav-left,
+.nav-right{
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
+  gap: 6px;
+}
+
+/* mniejsze linki */
+.nav-left a,
+.nav-right a{
+  font-size: 18px;
+  margin: 0;
+  white-space: nowrap; 
+  letter-spacing: 0.3px;
+}
+
+.nav-left{
+  justify-self: start;
+}
+
+.nav-right{
+  justify-self: end;
+}
+
+
+.nav-left a::after,
+.nav-right a::after{
+  bottom: -3px;
+}
+
+  .logo img{
+    height: 80px;
+  }
+}
+
+h1{
+  font-size: 18px;
+}
+
+h2{
+  font-size: 18px;
+}
+
+p{
+  font-size: 18px;
+}
+
+
+@media(max-width:1200px){
+  .collections-gallery,
+  .collections-intro{width:70%;}
+}
+
+@media(max-width:800px){
+  .collections-gallery{
+    width:90%;
+    grid-template-columns:1fr;
+  }
+
+  
+  .collections-intro h1{
+  font-family:"Spectral SC", serif;
+  font-size:18px;
+  margin-bottom:24px;
+}
+
+.collections-intro p{
+  font-family:"Spectral SC", serif;
+  font-size:14px;
+  max-width:520px;
+}
+}
+
+.collections-gallery-header {
+  font-family:"Spectral SC", serif;
+  font-size:18px;
+}
+
+.collections-gallery-header h2 {
+  font-family:"Spectral SC", serif;
+ font-size:18px;
+}
+
+.collections-gallery-header p {
+  font-family:"Spectral SC", serif;
+font-size:16px;
+}
+  /* FOOTER */
+  .footer-inner{
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  footer{
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;         
+  -webkit-touch-callout: none;  
+}
+
+.gallery-item,
+.popup-image,
+.split-image { position: relative; }
+
+.gallery-item::before,
+.popup-image::before,
+.split-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10;    
+  cursor: default;
+}
+
+/* Copyright */
+.footer-copy {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  opacity: .35;
+  margin-top: 18px;
+  letter-spacing: .06em;
+}
+</style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+  
+      <nav class="nav-left">
+        <a href="kolekcje.html">Tapety</a>
+        <a href="obrazy.html">Obrazy</a>
+      </nav>
+  
+      <div class="logo">
+        
+        <a href="index.html">
+          <img draggable="false" src="img/index/header_logo1.png"
+               alt="Wallfam — ręcznie malowane tapety artystyczne i obrazy na zamówienie"
+               width="160" height="160">
+          
+        </a>
+      </div>
+  
+      <nav class="nav-right">
+        <a href="onas.html">O nas</a>
+        
+        <a href="inspiracje.html" >Inspiracje</a>
+        <a href="kontakt.html">Zamów</a>
+      </nav>
+  
+    </div>
+  </header>
+
+<main class="collections-page">
+
+  <!-- INTRO TEXT -->
+  <section class="collections-intro">
+    <h1>O nas</h1>
+    <p>
+Każda tapeta to zaproszenie do odkrycia nowego krajobrazu i otwarcia mieszkania na to, co niezwykłe.
+</p>
+  </section>
+
+  <!-- GALLERY -->
+<!-- SECTION 1 -->
+<section class="collections-gallery-section">
+  <div class="collections-gallery-header">
+    <h2>Wallfam to pociągnięcie piękna</h2>
+    <p>Każdy obraz w kolekcji Wallfam jest promieniem rzucającym światło na naszą potrzebę piękna odbitą w zwierciadle natury. Magiczne krajobrazy otwierają nasze wnętrza na to, co niespotykane i sprawiają, że nasze codzienne pomieszczenia stają się miejscami, w których chce się przebywać.</p>
+<p>Tapeta lub obraz — w zależności od Państwa preferencji — pozwolą otworzyć cztery ściany domowego wnętrza na piękno. Dzięki przeniesieniu ręcznie malowanych obrazów na wysokiej jakości flizelinie możemy zaoferować Państwu autorską sztukę w domowym wnętrzu.</p>
+<p>Każda tapeta artystyczna Wallfam produkowana jest na wymiar konkretnej ściany. Bazowy format projektu to 500×300 cm, dostosowany do podanych wymiarów z uwzględnieniem wnęk i skosów, realizacja ~2 tygodnie.</p>
+  </div>
+  <div class="collections-gallery">
+    <div class="gallery-item"><img draggable="false" src="onas/2.jpg" alt="Proces tworzenia tapety artystycznej Wallfam — ręcznie malowany obraz przed przeniesieniem na flizelinie"></div>
+    <div class="gallery-item"><img draggable="false" src="onas/fotka3.jpg" alt="Artystyczne tapety Wallfam — oryginalne obrazy botaniczne w pracowni artysty"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="kontakt">
+  <div class="footer-inner">
+    <div>
+      <h4>Wallfam</h4>
+      <p>Artystyczne tapety na wymiar i ręcznie malowane obrazy.<br>Kolekcje: Lascaux · Arles ·</p>
+    </div>
+
+    <div>
+      <h4>Kontakt</h4>
+      <p><a href="mailto:wallfam@wallfam.eu" style="color:inherit;text-decoration:none;opacity:.85;">wallfam@wallfam.eu</a></p>
+    </div>
+
+    <div>
+      <h4>Social media</h4>
+      <p><a href="https://www.instagram.com/wallfam_art" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;opacity:.85;">Instagram ↗</a></p>
+    </div>
+  </div>
+
+  <p class="footer-copy">© Magdalena Dąbrowska 2026</p>
+</footer>
+
+
+
+
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+# wallfam.eu — robots.txt
+
+# Domyślnie: dopuszczamy indeksowanie całej witryny
+User-agent: *
+Allow: /
+
+# Wyszukiwarki i ich boty do podglądu linków
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Boty AI / asystentów odpowiadających na pytania (ChatGPT, Claude, Perplexity, Gemini)
+# — dopuszczone, aby Wallfam mogło pojawiać się w odpowiedziach AI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+Sitemap: https://wallfam.eu/sitemap.xml
