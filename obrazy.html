@@ -6,15 +6,15 @@
 <title>Ręcznie malowane obrazy botaniczne na zamówienie | Wallfam</title>
 <meta name="description" content="Oryginalne, ręcznie malowane obrazy botaniczne Wallfam — te same motywy co tapety, dostępne jako samodzielne dzieła sztuki. 16 motywów, każdy obraz tworzony indywidualnie.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://wallfam.eu/obrazy.html">
+<link rel="canonical" href="https://www.wallfam/obrazy.html">
 
 <meta property="og:type"         content="article">
 <meta property="og:locale"       content="pl_PL">
 <meta property="og:site_name"    content="Wallfam">
 <meta property="og:title" content="Ręcznie malowane obrazy botaniczne na zamówienie | Wallfam">
 <meta property="og:description" content="Oryginalne obrazy botaniczne na zamówienie — te same motywy co tapety artystyczne, dostępne jako samodzielne dzieła sztuki.">
-<meta property="og:url"          content="https://wallfam.eu/obrazy.html">
-<meta property="og:image"        content="https://wallfam.eu/img/og/obrazy.jpg"><!-- ← ZMIEŃ ŚCIEŻKĘ -->
+<meta property="og:url"          content="https://www.wallfam/obrazy.html">
+<meta property="og:image"        content="https://www.wallfam/img/og/obrazy.jpg"><!-- ← ZMIEŃ ŚCIEŻKĘ -->
 <meta property="og:image:width"  content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Artystyczne tapety Wallfam – ręcznie malowane wzory do wnętrz premium">
@@ -22,7 +22,7 @@
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:title"       content="Ręcznie malowane obrazy botaniczne na zamówienie | Wallfam">
 <meta name="twitter:description" content="Oryginalne obrazy botaniczne na zamówienie — te same motywy co tapety artystyczne. 16 motywów.">
-<meta name="twitter:image"       content="https://wallfam.eu/img/og/obrazy.jpg">
+<meta name="twitter:image"       content="https://www.wallfam/img/og/obrazy.jpg">
 
 <script type="application/ld+json">
   {
@@ -31,11 +31,11 @@
       
       {
         "@type": "Organization",
-        "@id": "https://wallfam.eu/#organization",
+        "@id": "https://www.wallfam/#organization",
         "name": "Wallfam",
-        "url": "https://wallfam.eu",
-        "logo": "https://wallfam.eu/img/logo.png",
-        "image": "https://wallfam.eu/img/og/index.jpg",
+        "url": "https://www.wallfam",
+        "logo": "https://www.wallfam/img/logo.png",
+        "image": "https://www.wallfam/img/og/index.jpg",
         "email": "wallfam@wallfam.eu",
         "description": "Artystyczne tapety na wymiar i ręcznie malowane obrazy inspirowane naturą i sztuką.",
         "sameAs": [
@@ -52,29 +52,29 @@
   
       {
         "@type": "WebSite",
-        "@id": "https://wallfam.eu/#website",
-        "url": "https://wallfam.eu",
+        "@id": "https://www.wallfam/#website",
+        "url": "https://www.wallfam",
         "name": "Wallfam",
         "inLanguage": "pl-PL",
         "description": "Artystyczne tapety i ręcznie malowane obrazy Wallfam",
         "publisher": {
-          "@id": "https://wallfam.eu/#organization"
+          "@id": "https://www.wallfam/#organization"
         }
       },
   
       {
         "@type": "LocalBusiness",
-        "@id": "https://wallfam.eu/#business",
+        "@id": "https://www.wallfam/#business",
         "name": "Wallfam",
-        "url": "https://wallfam.eu",
+        "url": "https://www.wallfam",
         "email": "wallfam@wallfam.eu",
         "areaServed": "PL",
-        "image": "https://wallfam.eu/img/og/index.jpg",
+        "image": "https://www.wallfam/img/og/index.jpg",
         "description": "Studio tworzące artystyczne tapety na wymiar oraz ręcznie malowane obrazy.",
         "sameAs": [
           "https://www.instagram.com/wallfam_art"
         ],
-               "mainEntityOfPage": "https://wallfam.eu/obrazy.html"
+               "mainEntityOfPage": "https://www.wallfam/obrazy.html"
       },
 
       {
@@ -103,8 +103,8 @@
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://wallfam.eu/" },
-          { "@type": "ListItem", "position": 2, "name": "Obrazy", "item": "https://wallfam.eu/obrazy.html" }
+          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.wallfam/" },
+          { "@type": "ListItem", "position": 2, "name": "Obrazy", "item": "https://www.wallfam/obrazy.html" }
         ]
       }
   
@@ -395,7 +395,7 @@ img {
 .popup-image{
   width: 100%;
   aspect-ratio: 3/2;
-  margin-top: 25px;
+  margin-top: 60px;
 }
 
 .popup-image img{
@@ -539,6 +539,91 @@ img {
   margin-top: 18px;
   letter-spacing: .06em;
 }
+
+/* ===== WERSJE OBRAZU (3 warianty pod sobą) ===== */
+.artwork-version{
+  width: 100%;
+}
+
+.artwork-version-top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.artwork-desc{
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  opacity: 0.75;
+  margin: 0;
+  text-align: left;
+}
+
+.btn-zamow{
+  flex-shrink: 0;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  padding: 7px 18px;
+  border: 1px solid rgba(255,255,255,0.45);
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: 0.3s ease;
+}
+
+.btn-zamow:hover{
+  background: #fff;
+  border-color: #fff;
+  color: #000;
+  opacity: 1;
+}
+
+@media (max-width: 900px){
+  .artwork-version-top{
+    gap: 10px;
+  }
+
+  .artwork-desc{
+    font-size: 12px;
+  }
+
+  .btn-zamow{
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+}
+
+/* ===== CENA / FORMAT ===== */
+.artwork-info{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.artwork-meta{
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  opacity: 0.55;
+  margin: 0;
+  text-align: left;
+}
+
+.artwork-meta .fill{
+  border-bottom: 1px dashed rgba(255,255,255,0.4);
+  padding-bottom: 1px;
+}
+
+@media (max-width: 900px){
+  .artwork-meta{
+    font-size: 11px;
+  }
+}
 </style>
 </head>
 
@@ -588,40 +673,156 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
 <!-- SECTION 1 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Paleta piór</h2>
+    <h2>Rozmowa ptaków</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-1" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-1a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1a.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-1b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1b.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-1c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1c.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 2 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Owcze historie</h2>
+    <h2>Most z wisterii</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-2" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-2a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2a.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-2b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2b.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-2c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2c.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 3 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Wodny bukiet I</h2>
+    <h2>Przystanek Amazonia</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-3" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-3a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3a.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-3b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3b.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-3c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3c.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 4 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Wodny bukiet II</h2>
+    <h2>Słoneczny ukłon</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-4" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-4a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4a.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-4b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4b.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-4c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4c.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
@@ -631,557 +832,863 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <h2>Panna w ogrodzie</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-5" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/5.jpg" alt="Ręcznie malowany obraz botaniczny — Panna w ogrodzie | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-5a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/5a.jpg" alt="Ręcznie malowany obraz botaniczny — Panna w ogrodzie, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-5b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/5b.jpg" alt="Ręcznie malowany obraz botaniczny — Panna w ogrodzie, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-5c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/5c.jpg" alt="Ręcznie malowany obraz botaniczny — Panna w ogrodzie, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 6 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Panny w Pompejach</h2>
+    <h2>Marzenia ptaków</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-6" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-6a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6a.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-6b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6b.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-6c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6c.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 7 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Rozmowa ptaków</h2>
+    <h2>Rośliny nocy</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-7" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-7a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7a.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-7b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7b.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-7c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7c.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 8 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Marzenia ptaków</h2>
+    <h2>Spokój dżungli</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-8" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-8a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8a.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-8b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8b.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-8c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8c.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 9 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Energia natury</h2>
+    <h2>Paleta piór</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-9" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-9a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9a.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-9b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9b.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-9c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9c.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 10 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Słoneczny ukłon</h2>
+    <h2>Energia natury</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-10" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-10a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10a.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-10b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10b.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-10c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10c.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 11 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Spokój dżungli</h2>
+    <h2>Panny w Pompejach</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-11" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-11a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11a.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-11b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11b.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-11c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11c.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 12 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Przystanek Amazonia</h2>
+    <h2>Tajemnica motyli</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-12" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-12a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12a.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-12b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12b.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-12c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12c.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
 <!-- SECTION 13 -->
 <section class="collections-gallery-section">
   <div class="collections-gallery-header">
-    <h2>Most z wisterii</h2>
+    <h2>Owcze historie</h2>
   </div>
   <div class="collections-gallery">
-    <a href="#popup-13" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii | Wallfam"></a>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 1 </p>
+        <p class="artwork-meta">Cena: 495 zł za sztukę / komplet 850 zł &nbsp;·&nbsp; Wymiary: 100×70 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-13a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13a.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 1 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 2 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: średnica 60 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-13b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13b.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 2 | Wallfam"></a>
+    </div>
+    <div class="artwork-version">
+      <div class="artwork-version-top">
+        <div class="artwork-info">
+        <p class="artwork-desc">Wersja 3 </p>
+        <p class="artwork-meta">Cena: 395 zł za sztukę &nbsp;·&nbsp; Wymiary: 70×40 cm &nbsp;·&nbsp; Wydruk na wysokiej jakości płótnie</p>
+      </div>
+      <a href="kontakt.html" class="btn-zamow">Zamów</a>
+      </div>
+      <a href="#popup-13c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13c.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 3 | Wallfam"></a>
+    </div>
   </div>
 </section>
 
-<!-- SECTION 14 -->
-<section class="collections-gallery-section">
-  <div class="collections-gallery-header">
-    <h2>Widok na kanał</h2>
-  </div>
-  <div class="collections-gallery">
-    <a href="#popup-14" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/14.jpg" alt="Ręcznie malowany obraz botaniczny — Widok na kanał | Wallfam"></a>
-  </div>
-</section>
-
-<!-- SECTION 15 -->
-<section class="collections-gallery-section">
-  <div class="collections-gallery-header">
-    <h2>Wieczorne trele</h2>
-  </div>
-  <div class="collections-gallery">
-    <a href="#popup-15" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/15.jpg" alt="Ręcznie malowany obraz botaniczny — Wieczorne trele | Wallfam"></a>
-  </div>
-</section>
-
-<!-- SECTION 16 -->
-<section class="collections-gallery-section">
-  <div class="collections-gallery-header">
-    <h2>Tajemnica motyli</h2>
-  </div>
-  <div class="collections-gallery">
-    <a href="#popup-16" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/16.jpg" alt="Ręcznie malowany obraz botaniczny — Tajemnica motyli | Wallfam"></a>
-  </div>
-</section>
-
-  <div id="popup-1" class="popup-overlay">
+  <div id="popup-1a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Paleta piór</h2>
-
-    <ul>
-500 zł/sztuka <br><br>
-
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
-
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
-
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
-
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/1.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/1a.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 1 | Wallfam">
     </div>
 
   </div>
 </div>
 
-<div id="popup-2" class="popup-overlay">
+<div id="popup-1b" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Owcze historie</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/1b.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 2 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
+<div id="popup-1c" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/2.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/1c.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 3 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-2a" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/2a.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 1 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-2b" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/2b.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-2c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/2c.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-3" class="popup-overlay">
+<div id="popup-3a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Wodny bukiet I</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/3a.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-Prezentowana kompozycja składa się z dwóch obraz w łącznej cenie 900 zł<br> <br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70X100cm<br><br>
+<div id="popup-3b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/3.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/3b.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-3c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/3c.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-4" class="popup-overlay">
+<div id="popup-4a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Wodny bukiet II</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/4a.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
+<div id="popup-4b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/4.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/4b.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-4c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/4c.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-5" class="popup-overlay">
+<div id="popup-5a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Panna w ogrodzie</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/5a.jpg" alt="Ręcznie malowany obraz botaniczny — Panna w ogrodzie, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
+<div id="popup-5b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/5.jpg" alt="Ręcznie malowany obraz botaniczny — Panna w ogrodzie | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/5b.jpg" alt="Ręcznie malowany obraz botaniczny — Panna w ogrodzie, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-5c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/5c.jpg" alt="Ręcznie malowany obraz botaniczny — Panna w ogrodzie, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-6" class="popup-overlay">
+<div id="popup-6a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Panny w Pompejach</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/6a.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
+<div id="popup-6b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/6.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/6b.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-6c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/6c.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-7" class="popup-overlay">
+<div id="popup-7a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Rozmowa ptaków</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/7a.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-Prezentowana kompozycja składa się z dwóch obraz w łącznej cenie 900 zł<br> <br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70X100cm<br><br>
+<div id="popup-7b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/7.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/7b.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-7c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/7c.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-8" class="popup-overlay">
+<div id="popup-8a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Marzenia ptaków</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/8a.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
+<div id="popup-8b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="wizki/obrazy/8a.jpg" alt="Ręcznie malowany obraz botaniczny Wallfam — Marzenia ptaków, szczegół | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/8b.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-8c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/8c.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-9" class="popup-overlay">
+<div id="popup-9a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Energia natury</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/9a.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
+<div id="popup-9b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/9.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/9b.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-9c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/9c.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-10" class="popup-overlay">
+<div id="popup-10a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Słoneczny ukłon</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/10a.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
+<div id="popup-10b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/10.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/10b.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-10c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/10c.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-11" class="popup-overlay">
+<div id="popup-11a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Spokój dżungli</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/11a.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 1 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70X100cm<br><br>
+<div id="popup-11b" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/11.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/11b.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 2 | Wallfam">
+    </div>
+
+  </div>
+</div>
+
+<div id="popup-11c" class="popup-overlay">
+
+  <div class="popup">
+
+    <a href="#" class="popup-close">×</a>
+
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/11c.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
 
-<div id="popup-12" class="popup-overlay">
+<div id="popup-12a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Przystanek Amazonia</h2>
-
-    <ul>
-500 zł/sztuka <br><br>
-
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
-
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
-
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
-
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/12.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/12a.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 1 | Wallfam">
     </div>
 
   </div>
 </div>
 
-<div id="popup-13" class="popup-overlay">
+<div id="popup-12b" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Most z wisterii</h2>
-
-    <ul>
-500 zł/sztuka <br><br>
-
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
-
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
-
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
-
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/13.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/12b.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 2 | Wallfam">
     </div>
 
   </div>
 </div>
 
-<div id="popup-14" class="popup-overlay">
+<div id="popup-12c" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Widok na kanał</h2>
-
-    <ul>
-500 zł/sztuka <br><br>
-
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
-
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
-
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
-
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/14.jpg" alt="Ręcznie malowany obraz botaniczny — Widok na kanał | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/12c.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 3 | Wallfam">
     </div>
 
   </div>
 </div>
 
-<div id="popup-15" class="popup-overlay">
+<div id="popup-13a" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Wieczorne trele</h2>
-
-    <ul>
-500 zł/sztuka <br><br>
-
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
-
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
-
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
-
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/15.jpg" alt="Ręcznie malowany obraz botaniczny — Wieczorne trele | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/13a.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 1 | Wallfam">
     </div>
 
   </div>
 </div>
 
-<div id="popup-16" class="popup-overlay">
+<div id="popup-13b" class="popup-overlay">
 
   <div class="popup">
 
     <a href="#" class="popup-close">×</a>
 
-    <h2>Obraz - Tajemnica motyli</h2>
+    <div class="popup-image">
+      <img draggable="false" src="img/wiz-obrazy/13b.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 2 | Wallfam">
+    </div>
 
-    <ul>
-500 zł/sztuka <br><br>
+  </div>
+</div>
 
-Obrazy drukowane są na płótnie w wymiarze 70x40cm<br><br>
+<div id="popup-13c" class="popup-overlay">
 
-Dodatkowo do każdego obrazu dodawane są drewniane listwy współgrające z charakterem płótna. <br>
+  <div class="popup">
 
-Listwy pozwalają one na całkowicie samodzielny i łatwy montaż. <br><br>
-
-Przy zamówieniu prosimy o wskazanie nazwy obrazu oraz liczby sztuk.
-    </ul>
+    <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/16.jpg" alt="Ręcznie malowany obraz botaniczny — Tajemnica motyli | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/13c.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 3 | Wallfam">
     </div>
 
   </div>

@@ -1,4 +1,4 @@
-# wallfam.eu — robots.txt
+# https://www.wallfam.eu — robots.txt
 
 # Domyślnie: dopuszczamy indeksowanie całej witryny
 User-agent: *
@@ -49,4 +49,4 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
-Sitemap: https://wallfam.eu/sitemap.xml
+Sitemap: https://www.wallfam.eu/sitemap.xml
