@@ -7,6 +7,9 @@
 <meta name="description" content="Oryginalne, ręcznie malowane obrazy botaniczne Wallfam — te same motywy co tapety, dostępne jako samodzielne dzieła sztuki. 16 motywów, każdy obraz tworzony indywidualnie.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.wallfam.eu/obrazy.html">
+<link rel="alternate" hreflang="pl" href="https://www.wallfam.eu/obrazy.html">
+<link rel="alternate" hreflang="en" href="https://www.wallfam.eu/en/obrazy.html">
+<link rel="alternate" hreflang="x-default" href="https://www.wallfam.eu/obrazy.html">
 
 <meta property="og:type"         content="article">
 <meta property="og:locale"       content="pl_PL">
@@ -81,22 +84,19 @@
         "@type": "ItemList",
         "name": "Motywy dostępne jako ręcznie malowane obrazy Wallfam",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Paleta piór" },
-          { "@type": "ListItem", "position": 2, "name": "Owcze historie" },
-          { "@type": "ListItem", "position": 3, "name": "Wodny bukiet I" },
-          { "@type": "ListItem", "position": 4, "name": "Wodny bukiet II" },
+          { "@type": "ListItem", "position": 1, "name": "Rozmowa ptaków" },
+          { "@type": "ListItem", "position": 2, "name": "Most z wisterii" },
+          { "@type": "ListItem", "position": 3, "name": "Przystanek Amazonia" },
+          { "@type": "ListItem", "position": 4, "name": "Słoneczny ukłon" },
           { "@type": "ListItem", "position": 5, "name": "Panna w ogrodzie" },
-          { "@type": "ListItem", "position": 6, "name": "Panny w Pompejach" },
-          { "@type": "ListItem", "position": 7, "name": "Rozmowa ptaków" },
-          { "@type": "ListItem", "position": 8, "name": "Marzenia ptaków" },
-          { "@type": "ListItem", "position": 9, "name": "Energia natury" },
-          { "@type": "ListItem", "position": 10, "name": "Słoneczny ukłon" },
-          { "@type": "ListItem", "position": 11, "name": "Spokój dżungli" },
-          { "@type": "ListItem", "position": 12, "name": "Przystanek Amazonia" },
-          { "@type": "ListItem", "position": 13, "name": "Most z wisterii" },
-          { "@type": "ListItem", "position": 14, "name": "Widok na kanał" },
-          { "@type": "ListItem", "position": 15, "name": "Wieczorne trele" },
-          { "@type": "ListItem", "position": 16, "name": "Tajemnica motyli" }
+          { "@type": "ListItem", "position": 6, "name": "Marzenia ptaków" },
+          { "@type": "ListItem", "position": 7, "name": "Rośliny nocy" },
+          { "@type": "ListItem", "position": 8, "name": "Spokój dżungli" },
+          { "@type": "ListItem", "position": 9, "name": "Paleta piór" },
+          { "@type": "ListItem", "position": 10, "name": "Energia natury" },
+          { "@type": "ListItem", "position": 11, "name": "Panny w Pompejach" },
+          { "@type": "ListItem", "position": 12, "name": "Tajemnica motyli" },
+          { "@type": "ListItem", "position": 13, "name": "Owcze historie" }
         ]
       },
 
@@ -624,6 +624,54 @@ img {
     font-size: 11px;
   }
 }
+
+/* ===== MOBILE: górne menu identyczne jak w index.html ===== */
+@media (max-width: 768px){
+  .nav{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px 12px;
+    column-gap: 24px;
+  }
+  .logo img{ height: 80px; }
+  .nav .nav-left,
+  .nav .nav-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+  .nav .nav-left a,
+  .nav .nav-right a{
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+  }
+  .nav .nav-left{
+    justify-self: end;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .nav .nav-right{
+    justify-self: start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .nav .nav-left a::after,
+  .nav .nav-right a::after{ bottom: -3px; }
+}
+
+/* ===== MOBILE: rozmiary tekstów jak w „O nas” ===== */
+@media (max-width: 768px){
+  .collections-intro h1,
+  .collections-gallery-header h2{ font-size: 18px; }
+  .collections-intro p,
+  .collections-gallery-header p{ font-size: 14px; }
+}
 </style>
 </head>
 
@@ -633,6 +681,7 @@ img {
     <div class="nav">
   
       <nav class="nav-left">
+        <a href="en/obrazy.html" class="lang-switch" hreflang="en" lang="en" title="English version" aria-label="English version" style="letter-spacing:.1em;">EN</a>
         <a href="kolekcje.html">Tapety</a>
         <a href="obrazy.html">Obrazy</a>
       </nav>
@@ -684,7 +733,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-1a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1a.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 1 | Wallfam"></a>
+      <a href="#popup-1a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1a.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -694,7 +743,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-1b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1b.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 2 | Wallfam"></a>
+      <a href="#popup-1b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1b.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -704,7 +753,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-1c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1c.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 3 | Wallfam"></a>
+      <a href="#popup-1c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/1c.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -723,7 +772,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-2a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2a.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 1 | Wallfam"></a>
+      <a href="#popup-2a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2a.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -733,7 +782,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-2b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2b.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 2 | Wallfam"></a>
+      <a href="#popup-2b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2b.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -743,7 +792,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-2c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2c.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 3 | Wallfam"></a>
+      <a href="#popup-2c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/2c.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -762,7 +811,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-3a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3a.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 1 | Wallfam"></a>
+      <a href="#popup-3a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3a.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -772,7 +821,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-3b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3b.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 2 | Wallfam"></a>
+      <a href="#popup-3b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3b.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -782,7 +831,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-3c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3c.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 3 | Wallfam"></a>
+      <a href="#popup-3c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/3c.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -801,7 +850,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-4a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4a.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 1 | Wallfam"></a>
+      <a href="#popup-4a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4a.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -811,7 +860,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-4b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4b.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 2 | Wallfam"></a>
+      <a href="#popup-4b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4b.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -821,7 +870,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-4c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4c.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 3 | Wallfam"></a>
+      <a href="#popup-4c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/4c.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -879,7 +928,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-6a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6a.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 1 | Wallfam"></a>
+      <a href="#popup-6a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6a.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -889,7 +938,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-6b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6b.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 2 | Wallfam"></a>
+      <a href="#popup-6b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6b.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -899,7 +948,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-6c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6c.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 3 | Wallfam"></a>
+      <a href="#popup-6c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/6c.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -918,7 +967,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-7a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7a.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 1 | Wallfam"></a>
+      <a href="#popup-7a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7a.jpg" alt="Ręcznie malowany obraz botaniczny — Rośliny nocy, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -928,7 +977,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-7b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7b.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 2 | Wallfam"></a>
+      <a href="#popup-7b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7b.jpg" alt="Ręcznie malowany obraz botaniczny — Rośliny nocy, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -938,7 +987,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-7c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7c.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 3 | Wallfam"></a>
+      <a href="#popup-7c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/7c.jpg" alt="Ręcznie malowany obraz botaniczny — Rośliny nocy, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -957,7 +1006,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-8a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8a.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 1 | Wallfam"></a>
+      <a href="#popup-8a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8a.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -967,7 +1016,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-8b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8b.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 2 | Wallfam"></a>
+      <a href="#popup-8b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8b.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -977,7 +1026,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-8c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8c.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 3 | Wallfam"></a>
+      <a href="#popup-8c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/8c.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -996,7 +1045,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-9a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9a.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 1 | Wallfam"></a>
+      <a href="#popup-9a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9a.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1006,7 +1055,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-9b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9b.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 2 | Wallfam"></a>
+      <a href="#popup-9b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9b.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1016,7 +1065,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-9c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9c.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 3 | Wallfam"></a>
+      <a href="#popup-9c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/9c.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -1035,7 +1084,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-10a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10a.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 1 | Wallfam"></a>
+      <a href="#popup-10a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10a.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1045,7 +1094,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-10b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10b.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 2 | Wallfam"></a>
+      <a href="#popup-10b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10b.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1055,7 +1104,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-10c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10c.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 3 | Wallfam"></a>
+      <a href="#popup-10c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/10c.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -1074,7 +1123,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-11a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11a.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 1 | Wallfam"></a>
+      <a href="#popup-11a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11a.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1084,7 +1133,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-11b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11b.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 2 | Wallfam"></a>
+      <a href="#popup-11b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11b.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1094,7 +1143,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-11c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11c.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 3 | Wallfam"></a>
+      <a href="#popup-11c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/11c.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -1113,7 +1162,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-12a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12a.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 1 | Wallfam"></a>
+      <a href="#popup-12a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12a.jpg" alt="Ręcznie malowany obraz botaniczny — Tajemnica motyli, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1123,7 +1172,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-12b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12b.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 2 | Wallfam"></a>
+      <a href="#popup-12b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12b.jpg" alt="Ręcznie malowany obraz botaniczny — Tajemnica motyli, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1133,7 +1182,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-12c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12c.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 3 | Wallfam"></a>
+      <a href="#popup-12c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/12c.jpg" alt="Ręcznie malowany obraz botaniczny — Tajemnica motyli, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -1152,7 +1201,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-13a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13a.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 1 | Wallfam"></a>
+      <a href="#popup-13a" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13a.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 1 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1162,7 +1211,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-13b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13b.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 2 | Wallfam"></a>
+      <a href="#popup-13b" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13b.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 2 | Wallfam"></a>
     </div>
     <div class="artwork-version">
       <div class="artwork-version-top">
@@ -1172,7 +1221,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
       </div>
       <a href="kontakt.html" class="btn-zamow">Zamów</a>
       </div>
-      <a href="#popup-13c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13c.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 3 | Wallfam"></a>
+      <a href="#popup-13c" class="gallery-item"><img draggable="false" src="img/wiz-obrazy/13c.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 3 | Wallfam"></a>
     </div>
   </div>
 </section>
@@ -1184,7 +1233,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/1a.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/1a.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1197,7 +1246,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/1b.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/1b.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1210,7 +1259,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/1c.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/1c.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1223,7 +1272,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/2a.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/2a.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1236,7 +1285,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/2b.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/2b.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1249,7 +1298,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/2c.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/2c.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1263,7 +1312,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/3a.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/3a.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1276,7 +1325,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/3b.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/3b.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1289,7 +1338,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/3c.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet I, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/3c.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1303,7 +1352,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/4a.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/4a.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1316,7 +1365,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/4b.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/4b.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1329,7 +1378,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/4c.jpg" alt="Ręcznie malowany obraz botaniczny — Wodny bukiet II, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/4c.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1383,7 +1432,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/6a.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/6a.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1396,7 +1445,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/6b.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/6b.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1409,7 +1458,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/6c.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/6c.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1423,7 +1472,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/7a.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/7a.jpg" alt="Ręcznie malowany obraz botaniczny — Rośliny nocy, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1436,7 +1485,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/7b.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/7b.jpg" alt="Ręcznie malowany obraz botaniczny — Rośliny nocy, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1449,7 +1498,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/7c.jpg" alt="Ręcznie malowany obraz botaniczny — Rozmowa ptaków, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/7c.jpg" alt="Ręcznie malowany obraz botaniczny — Rośliny nocy, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1463,7 +1512,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/8a.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/8a.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1476,7 +1525,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/8b.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/8b.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1489,7 +1538,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/8c.jpg" alt="Ręcznie malowany obraz botaniczny — Marzenia ptaków, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/8c.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1503,7 +1552,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/9a.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/9a.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1516,7 +1565,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/9b.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/9b.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1529,7 +1578,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/9c.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/9c.jpg" alt="Ręcznie malowany obraz botaniczny — Paleta piór, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1543,7 +1592,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/10a.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/10a.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1556,7 +1605,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/10b.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/10b.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1569,7 +1618,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/10c.jpg" alt="Ręcznie malowany obraz botaniczny — Słoneczny ukłon, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/10c.jpg" alt="Ręcznie malowany obraz botaniczny — Energia natury, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1583,7 +1632,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/11a.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/11a.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1596,7 +1645,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/11b.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/11b.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1609,7 +1658,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/11c.jpg" alt="Ręcznie malowany obraz botaniczny — Spokój dżungli, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/11c.jpg" alt="Ręcznie malowany obraz botaniczny — Panny w Pompejach, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1623,7 +1672,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/12a.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/12a.jpg" alt="Ręcznie malowany obraz botaniczny — Tajemnica motyli, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1636,7 +1685,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/12b.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/12b.jpg" alt="Ręcznie malowany obraz botaniczny — Tajemnica motyli, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1649,7 +1698,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/12c.jpg" alt="Ręcznie malowany obraz botaniczny — Przystanek Amazonia, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/12c.jpg" alt="Ręcznie malowany obraz botaniczny — Tajemnica motyli, wersja 3 | Wallfam">
     </div>
 
   </div>
@@ -1662,7 +1711,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/13a.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 1 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/13a.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 1 | Wallfam">
     </div>
 
   </div>
@@ -1675,7 +1724,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/13b.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 2 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/13b.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 2 | Wallfam">
     </div>
 
   </div>
@@ -1688,7 +1737,7 @@ Podobnie pusta ściana dzięki obrazowi lub tapecie może być początkiem dzie�
     <a href="#" class="popup-close">×</a>
 
     <div class="popup-image">
-      <img draggable="false" src="img/wiz-obrazy/13c.jpg" alt="Ręcznie malowany obraz botaniczny — Most z wisterii, wersja 3 | Wallfam">
+      <img draggable="false" src="img/wiz-obrazy/13c.jpg" alt="Ręcznie malowany obraz botaniczny — Owcze historie, wersja 3 | Wallfam">
     </div>
 
   </div>

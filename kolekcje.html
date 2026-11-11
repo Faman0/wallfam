@@ -7,6 +7,9 @@
 <meta name="description" content="Tapety artystyczne na wymiar w dwóch kolekcjach: Lascaux z fakturą fresku i Arles z fakturą płótna malarskiego. Kilkanaście ręcznie malowanych motywów botanicznych. Od 380 zł/m².">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.wallfam.eu/kolekcje.html">
+<link rel="alternate" hreflang="pl" href="https://www.wallfam.eu/kolekcje.html">
+<link rel="alternate" hreflang="en" href="https://www.wallfam.eu/en/kolekcje.html">
+<link rel="alternate" hreflang="x-default" href="https://www.wallfam.eu/kolekcje.html">
 
 <meta property="og:type"         content="article">
 <meta property="og:locale"       content="pl_PL">
@@ -224,28 +227,6 @@ body{
   background: #414141;
 }
 
-.logo{
-  grid-column:2;
-  display:flex;
-  justify-content:center;
-}
-
-.logo img{
-  height:180px;
-}
-
-.nav-left, .nav-right{
-  display:flex;
-  gap:10px;
-}
-
-.nav-left a,
-.nav-right a{
-  text-decoration:none;
-  color:var(--text);
-  font-size:25px;
-}
-
 a.split-title-link,
 a.split-title-link:link,
 a.split-title-link:visited,
@@ -407,9 +388,18 @@ footer{
   word-break: break-word;
 }
 
+.split-text h2{
+  font-size: 16px;
+  line-height: 1.3;
+}
+
 .split-text p{
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
+}
+
+.split-text p span{
+  font-size: 10px !important;
 }
 
   .footer-inner{
@@ -456,6 +446,52 @@ img {
   margin-top: 18px;
   letter-spacing: .06em;
 }
+
+/* ===== MOBILE: górne menu identyczne jak w index.html ===== */
+@media (max-width: 768px){
+  .nav{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px 12px;
+    column-gap: 24px;
+  }
+  .logo img{ height: 80px; }
+  .nav .nav-left,
+  .nav .nav-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+  .nav .nav-left a,
+  .nav .nav-right a{
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+  }
+  .nav .nav-left{
+    justify-self: end;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .nav .nav-right{
+    justify-self: start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .nav .nav-left a::after,
+  .nav .nav-right a::after{ bottom: -3px; }
+}
+
+/* ===== MOBILE: rozmiary tekstów jak w „O nas” ===== */
+@media (max-width: 768px){
+  .split-text h1, .split-text h2{ font-size: 18px; }
+  .split-text p{ font-size: 14px; }
+}
 </style>
 </head>
 
@@ -465,6 +501,7 @@ img {
     <div class="nav">
   
       <nav class="nav-left">
+        <a href="en/kolekcje.html" class="lang-switch" hreflang="en" lang="en" title="English version" aria-label="English version" style="letter-spacing:.1em;">EN</a>
         <a href="kolekcje.html">Tapety</a>
         <a href="obrazy.html">Obrazy</a>
       </nav>
