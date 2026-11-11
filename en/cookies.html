@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Privacy policy of the Wallfam website — information on the processing of personal data, cookies and users' rights.">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wallfam Privacy Policy and Cookies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#414141;
+  --text:#f2f2f2;
+  --accent:#282828;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Spectral SC", serif;
+  line-height:1.8;
+  padding-top:0px;
+}
+
+/* ===== HEADER ===== */
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #414141;
+  border-bottom: 1px solid #444;
+  z-index: 1000;
+}
+
+.nav{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 28px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.nav-left,
+.nav-right{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-left{ justify-content: flex-start; }
+.nav-right{ justify-content: flex-end; }
+
+.nav a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0.85;
+  position: relative;
+  transition: 0.2s ease;
+  will-change: opacity;
+}
+
+.nav a:hover{
+  opacity: 1;
+}
+
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0%;
+  height:1px;
+  background:#fff;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after{
+  width:100%;
+}
+
+.logo{
+  display: grid;
+  place-items: center;
+  transform: translateZ(0); /* stabilizuje GPU rendering */
+}
+
+.logo img{
+  height: 180px;
+  width: auto;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+}
+.logo a{
+  text-decoration: none;
+  opacity: 1;
+}
+
+.logo a::after{
+  display: none;
+}
+
+
+.privacy-section{
+  max-width:900px;
+  margin:120px auto;
+  padding:0 28px;
+}
+
+.privacy-section h1{
+  font-size:42px;
+  margin-bottom:60px;
+  text-align:center;
+}
+
+.privacy-section h2{
+  font-size:22px;
+  margin-top:50px;
+  margin-bottom:18px;
+  letter-spacing:1px;
+}
+
+.privacy-section p{
+  font-size:17px;
+  opacity:0.9;
+  margin-bottom:20px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  border-top:1px solid rgba(255,255,255,0.2);
+  padding:40px 28px;
+  margin-top:120px;
+}
+
+.footer-inner{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+  font-size:14px;
+}
+
+footer h4{
+  margin-bottom:12px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  body{
+    padding-top:0px;
+  }
+
+  @media (max-width: 768px){
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 12px;
+  column-gap: 8px;
+}
+
+/* logo zostaje na środku */
+.logo img{
+  height: 70px;
+}
+
+/* linki mają się łamać */
+.nav-left,
+.nav-right{
+  display: flex;
+  flex-wrap: wrap;   
+  justify-content: center;
+  gap: 6px;
+}
+
+/* mniejsze linki */
+.nav-left a,
+.nav-right a{
+  font-size: 18px;
+  margin: 0;
+  white-space: nowrap; 
+  letter-spacing: 0.3px;
+}
+
+/* lepsze spacingi */
+.nav-left{
+  justify-self: start;
+}
+
+.nav-right{
+  justify-self: end;
+}
+
+.nav-left a::after,
+.nav-right a::after{
+  bottom: -3px;
+}
+
+  .logo img{
+    height: 80px;
+  }
+}
+
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;         
+  -webkit-touch-callout: none;  
+}
+
+.gallery-item,
+.popup-image,
+.split-image { position: relative; }
+
+.gallery-item::before,
+.popup-image::before,
+.split-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10;    
+  cursor: default;
+}
+
+/* Copyright */
+.footer-copy {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  opacity: .35;
+  margin-top: 18px;
+  letter-spacing: .06em;
+}
+
+/* ===== MOBILE: górne menu identyczne jak w index.html ===== */
+@media (max-width: 768px){
+  .nav{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px 12px;
+    column-gap: 24px;
+  }
+  .logo img{ height: 80px; }
+  .nav .nav-left,
+  .nav .nav-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+  .nav .nav-left a,
+  .nav .nav-right a{
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+  }
+  .nav .nav-left{
+    justify-self: end;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .nav .nav-right{
+    justify-self: start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .nav .nav-left a::after,
+  .nav .nav-right a::after{ bottom: -3px; }
+}
+
+/* ===== MOBILE: rozmiary tekstów jak w „O nas” ===== */
+@media (max-width: 768px){
+  .privacy-section h1,
+  .privacy-section h2{ font-size: 18px; }
+  .privacy-section p{ font-size: 14px; }
+}
+</style>
+<link rel="canonical" href="https://www.wallfam.eu/en/cookies.html">
+<link rel="alternate" hreflang="pl" href="https://www.wallfam.eu/cookies.html">
+<link rel="alternate" hreflang="en" href="https://www.wallfam.eu/en/cookies.html">
+<link rel="alternate" hreflang="x-default" href="https://www.wallfam.eu/cookies.html">
+
+<meta property="og:type"        content="website">
+<meta property="og:locale"      content="en_US">
+<meta property="og:site_name"   content="Wallfam">
+<meta property="og:title"       content="Wallfam Privacy Policy and Cookies">
+<meta property="og:description" content="Privacy policy of the Wallfam website — information on the processing of personal data and cookies.">
+<meta property="og:url"         content="https://www.wallfam.eu/en/cookies.html">
+<meta property="og:image"       content="https://www.wallfam.eu/img/og/index.jpg">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card"        content="summary">
+<meta name="twitter:title"       content="Privacy Policy and Cookies | Wallfam">
+<meta name="twitter:description" content="Information on the processing of personal data and cookies on the Wallfam website.">
+<meta name="twitter:image"       content="https://www.wallfam.eu/img/og/index.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.wallfam.eu/#organization",
+      "name": "Wallfam",
+      "url": "https://www.wallfam.eu",
+      "logo": "https://www.wallfam.eu/img/logo.png",
+      "email": "wallfam@wallfam.eu",
+      "sameAs": [
+        "https://www.instagram.com/wallfam_art"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.wallfam.eu/en/cookies.html",
+      "url": "https://www.wallfam.eu/en/cookies.html",
+      "name": "Privacy Policy and Cookies | Wallfam",
+      "isPartOf": {
+        "@id": "https://www.wallfam.eu/#website"
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+  
+      <nav class="nav-left">
+        <a href="../cookies.html" class="lang-switch" hreflang="pl" lang="pl" title="Polska wersja" aria-label="Polska wersja" style="letter-spacing:.1em;">PL</a>
+        <a href="kolekcje.html">Wallpapers</a>
+        <a href="obrazy.html">Paintings</a>
+      </nav>
+  
+      <div class="logo">
+          <a href="index.html">
+          <img draggable="false" src="../img/index/header_logo1.png"
+               alt="Wallfam — hand-painted artistic wallpapers and made-to-order paintings"
+               width="160" height="160">
+          
+        </a>
+      </div>
+  
+      <nav class="nav-right">
+        <a href="onas.html">About us</a>
+        
+        <a href="inspiracje.html" >Inspirations</a>
+        <a href="kontakt.html">Order</a>
+      </nav>
+  
+    </div>
+  </header>
+
+<section class="privacy-section">
+
+<h1>Privacy Policy</h1>
+
+<p>
+This Privacy Policy sets out the rules for processing the personal data of users of the wallfam.eu website and is for information purposes only. Use of the website constitutes acceptance of this Privacy Policy.
+</p>
+
+<h2>Data controller</h2>
+<p>The data controller is Magdalena Dąbrowska, operating under the Wallfam brand, contact: <a href="mailto:wallfam@wallfam.eu" style="color:inherit;">wallfam@wallfam.eu</a>.</p>
+
+<h2>Methods of data collection</h2>
+<p>
+The website collects data concerning the natural persons using it in order to provide a contact form for the purpose of identifying the user and responding to enquiries and the content formulated in the form, as well as for marketing purposes.
+</p>
+
+<h2>Purpose of processing personal data</h2>
+<p>
+Personal data collected by the website is processed in order to provide a contact form for the purpose of identifying the user and responding to enquiries and the content formulated in the form, as well as for marketing purposes.
+</p>
+
+<h2>Legal basis for processing</h2>
+<p>
+We inform you that, in the course of its activities, the controller may collect and process personal data on the basis of various legal provisions, including the user's consent, performance of a contract, a legal obligation, and for the pursuit of the legitimate interests of the controller or third parties.
+</p>
+
+<h2>Data retention period</h2>
+<p>
+Your personal data may be processed for a specified period in accordance with applicable law and in line with the purposes of processing.
+</p>
+
+<h2>Your rights</h2>
+<p>
+You have the right of access, rectification, erasure, restriction of processing, data portability and the right to lodge a complaint with a supervisory authority. Detailed information on this can be found in the GDPR.
+</p>
+
+<h2>Data recipients</h2>
+<p>
+Your personal data may be made available to the relevant employees of the data controller and to IT service providers on the basis of a data processing agreement.
+</p>
+
+<h2>Profiling</h2>
+<p>
+Your personal data will not be subject to profiling.
+</p>
+
+<h2>Changes to the privacy policy</h2>
+<p>
+The data controller reserves the right to amend this Privacy Policy if required by applicable law or if the change introduces a standard higher than the minimum required by law.
+</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="kontakt">
+  <div class="footer-inner">
+    <div>
+      <h4>Wallfam</h4>
+      <p>Made-to-measure artistic wallpapers and hand-painted paintings.<br>Collections: Lascaux · Arles ·</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p><a href="mailto:wallfam@wallfam.eu" style="color:inherit;text-decoration:none;opacity:.85;">wallfam@wallfam.eu</a></p>
+    </div>
+
+    <div>
+      <h4>Social media</h4>
+      <p><a href="https://www.instagram.com/wallfam_art" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;opacity:.85;">Instagram ↗</a></p>
+    </div>
+  </div>
+
+  <p class="footer-copy">© Magdalena Dąbrowska 2026</p>
+</footer>
+
+</body>
+</html>
